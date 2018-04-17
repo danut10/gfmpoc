@@ -1,6 +1,8 @@
 package ro.cegeka.gfmpoc.test;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,6 +16,8 @@ import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestClientBuilder;
 import org.elasticsearch.client.RestHighLevelClient;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Main {
 
@@ -41,7 +45,13 @@ public class Main {
 		
 		GetRequest getRequest = new GetRequest("park","doc", "1");   
 		GetResponse getResponse = esClient.get(getRequest);
+		String responseString = getResponse.getSourceAsString();
+		//Map<String, Object> responseMap = getResponse.getSourceAsMap();
+		DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+		ObjectMapper jsonMapper = new ObjectMapper().setDateFormat(dateFormat);	
+		//filter = (IDataFilter) jsonMapper.readValue(json, cls);
 		
+				
 		esClient.close();
 		
 		
