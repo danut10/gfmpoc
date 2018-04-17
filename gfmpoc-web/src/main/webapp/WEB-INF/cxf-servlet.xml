@@ -23,14 +23,14 @@
 		http://cxf.apache.org/schemas/jaxrs.xsd
 		">
 
-	<context:component-scan base-package="ro.kepler.kepres"/>
+	<context:component-scan base-package="ro.cegeka.gfmpoc"/>
 	
 	<bean id="jsonProvider" class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider"/>
 	
   	<jaxrs:server id="rsAll" address="/rs">
   		<jaxrs:serviceBeans>
   			<!--  
-			<bean class="ro.cegeka.gfm.poc.ws.RsGeneric"/>
+			<bean class="ro.cegeka.gfmpoc.ws.RsGeneric"/>
 			-->
   		</jaxrs:serviceBeans>
   		<jaxrs:providers>

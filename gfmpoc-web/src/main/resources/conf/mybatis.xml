@@ -12,12 +12,12 @@
 	</settings>
 
 	<typeAliases>
-  		<package name="ro.cegeka.gfm.poc.common.dataRecords"/>
+  		<package name="ro.cegeka.gfmpoc.common.dataRecords"/>
 	</typeAliases>
 
 	<!--  
 	<mappers>
-		<package name="ro.cegeka.gfm.poc.app.dao"/>
+		<package name="ro.cegeka.gfmpoc.app.dao"/>
 	</mappers>
 	-->
 

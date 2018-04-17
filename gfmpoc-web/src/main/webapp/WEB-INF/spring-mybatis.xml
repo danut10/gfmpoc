@@ -25,7 +25,7 @@
 	</bean>
 
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="ro.cegeka.gfm.poc.app.dao"/>
+		<property name="basePackage" value="ro.cegeka.gfmpoc.app.dao"/>
 		<property name="sqlSessionFactoryBeanName" value="sessionFactory"/>
 	</bean>
 	
@@ -43,12 +43,12 @@
 	</bean>
 	
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="ro.cegeka.gfm.poc.app.daoLocal"/>
+		<property name="basePackage" value="ro.cegeka.gfmpoc.app.daoLocal"/>
 		<property name="sqlSessionFactoryBeanName" value="sessionFactoryLocal"/>
 	</bean>
 
 	<!--  
-	<mybatis:scan base-package="ro.cegeka.gfm.poc.app.dao" />
+	<mybatis:scan base-package="ro.cegeka.gfmpoc.app.dao" />
 	-->
 
 </beans>

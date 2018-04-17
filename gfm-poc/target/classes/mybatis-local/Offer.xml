@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ro.cegeka.gfm.poc.app.daoLocal.DaoLocalOffer">
+
+	<select id="readList" resultType="Offer">
+		select * from Offer
+	</select>
+			
+	<select id="read" resultType="holiday">
+		select * from Offer where id = #{id}
+	</select>
+	
+	<delete id="delete">
+		delete from Offer where id = #{id}
+	</delete>
+	
+	<update id="update" parameterType="Holiday">
+		update Offer
+     	set 
+			  parkName = #{record.parkName}
+			, accommodation = #{record.accommodation}
+			, dtFrom = #{record.dtFrom}
+			, dtTo = #{record.dtTo}
+			, price = #{record.price}
+		where
+			id = #{record.id}
+	</update>
+   
+	<insert id="create" parameterType="Holiday" useGeneratedKeys="true" keyProperty="record.id">
+		<selectKey keyProperty="record.id" resultType="int" order="AFTER">
+            select last_insert_id();
+		</selectKey>	
+		insert into Offer(
+			  parkName
+			, accommodation
+			, dtFrom
+			, dtTo
+			, price
+		) values (
+			  #{record.parkName}
+			, #{record.accommodation}
+			, #{record.dtFrom}
+			, #{record.dtTo}
+			, #{record.price}
+		)
+	</insert>
+	
+</mapper>
