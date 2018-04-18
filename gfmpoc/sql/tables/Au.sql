@@ -4,6 +4,6 @@ CREATE TABLE Au (
 	unitType varchar(10),
 	price dec(10,2),
 	parkId int(11),
-	lastUpdate timestamp,
+	lastUpdate timestamp DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (id)
 );
