@@ -1,0 +1,48 @@
+body {
+	font-family: sans-serif, Verdana, Tahoma,"Trebuchet MS";
+	font-size: 11pt;
+	background-color: #eeeeee
+}
+
+header {
+	text-align: center; 
+	font-size: 24pt; 
+	margin-bottom: 100px; 
+	margin-top: 20px;
+}
+
+table {
+	width: 100%;	
+	border-collapse: collapse;
+	font-family: sans-serif;	
+	margin-bottom: 15px; 
+} 
+
+td
+{
+	border-bottom: 1px solid silver;	
+	padding-top: 4px;
+	padding-bottom: 0px;
+	padding-left: 3px;	
+	height: 32px;
+} 
+
+th
+{
+	border-bottom: 3px double silver;
+	font-weight: normal;
+	font-size: 13pt;	
+	padding-bottom: 5px;
+	padding-left: 3px;	
+} 
+
+.divMain {
+	margin: auto; margin-top: 20px; 
+	padding: 10px; padding-left: 30px; 
+	width: 1000px; 
+	min-height: 600px;
+	border: solid 1px silver; 
+	font-family: sans-serif; 
+	background-color: white; 
+}
+
