@@ -2,8 +2,23 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
-<div style="margin: auto; margin-top: 10px; width: 900px; border: solid 1px silver; padding: 10px;">
-	<h1>Park list</h1>
+<html>
+
+<head>
+	<title>Holidays Platform</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/img/favicon.ico" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/body.css">	
+</head>
+
+<body>
+<div class="divMain adm">
+	<header>
+		GFM Holidays Platform<br> 
+		Admin interface
+	</header>
+	
+	<h1>Holiday parks</h1>
 	<table class="tblGrid">
 		<tr>
 			<th align="left">ID</th>
@@ -21,5 +36,8 @@
 		</tr>
 		</c:forEach>	
 	</table>
-	
 </div>
+</body>
+
+</html>
+

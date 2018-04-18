@@ -18,8 +18,7 @@ table {
 	margin-bottom: 15px; 
 } 
 
-td
-{
+td {
 	border-bottom: 1px solid silver;	
 	padding-top: 4px;
 	padding-bottom: 0px;
@@ -27,14 +26,20 @@ td
 	height: 32px;
 } 
 
-th
-{
+th {
 	border-bottom: 3px double silver;
 	font-weight: normal;
 	font-size: 13pt;	
 	padding-bottom: 5px;
 	padding-left: 3px;	
 } 
+
+h1 {
+	font-size: 18pt;
+	color: #2255ff;
+	font-weight: normal;
+	margin-bottom: 20px;	
+}
 
 .divMain {
 	margin: auto; margin-top: 20px; 
@@ -44,5 +49,15 @@ th
 	border: solid 1px silver; 
 	font-family: sans-serif; 
 	background-color: white; 
+	border-radius: 5px;
 }
+
+.cust {
+	background-color: #fffeef;
+}
+
+.adm {
+	background-color: #f9ffff;
+}
+
 
