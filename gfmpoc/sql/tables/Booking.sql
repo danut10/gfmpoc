@@ -3,6 +3,7 @@ CREATE TABLE Booking (
 	cutomerName varchar(30),
 	dateFrom date,
 	dateTo date,
-	fkAu int(11),
+	auId int(11),
+	lastUpdate timestamp,
 	PRIMARY KEY (id)
 	);
