@@ -4,6 +4,6 @@ CREATE TABLE Booking (
 	dateFrom date,
 	dateTo date,
 	auId int(11),
-	lastUpdate timestamp,
+	lastUpdate timestamp DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (id)
 	);
