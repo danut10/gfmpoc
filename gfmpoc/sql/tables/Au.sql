@@ -3,6 +3,7 @@ CREATE TABLE Au (
 	name varchar(30),
 	unitType varchar(10),
 	price dec(10,2),
-	fkPark int(11),
+	parkId int(11),
+	lastUpdate timestamp,
 	PRIMARY KEY (id)
 );
