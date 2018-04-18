@@ -36,6 +36,9 @@
 		<property name="password" value="${jdbcLocal.password}"/>
 	</bean>
 	
+	
+	<!-- For connection to secondary database -->
+	<!--  
 	<bean id="sqlSessionFactoryLocal" name="sessionFactoryLocal" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSourceLocal" />
 		<property name="configLocation" value="classpath:conf/mybatis.xml" />
@@ -46,9 +49,5 @@
 		<property name="basePackage" value="ro.cegeka.gfmpoc.app.daoLocal"/>
 		<property name="sqlSessionFactoryBeanName" value="sessionFactoryLocal"/>
 	</bean>
-
-	<!--  
-	<mybatis:scan base-package="ro.cegeka.gfmpoc.app.dao" />
 	-->
-
 </beans>

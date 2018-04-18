@@ -2,7 +2,7 @@ package ro.cegeka.gfmpoc.common.dataRecords;
 
 import ro.cegeka.gfmpoc.common.core.impl.DataRecordID;
 
-public class AU extends DataRecordID {
+public class Au extends DataRecordID {
 
 	private String type;
 	private String name;

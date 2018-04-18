@@ -9,7 +9,7 @@ public class Booking extends DataRecordID {
 	private Date from;
 	private Date to;
 	private String customer;
-	private AU au;
+	private Au au;
 	
 	public Date getFrom() { return from; }
 	public void setFrom(Date from) { this.from = from; }
@@ -20,8 +20,8 @@ public class Booking extends DataRecordID {
 	public String getCustomer() { return customer; }
 	public void setCustomer(String customer) { this.customer = customer; }
 	
-	public AU getAu() { return au; }
-	public void setAu(AU au) { this.au = au; }
+	public Au getAu() { return au; }
+	public void setAu(Au au) { this.au = au; }
 	
 	
 }
