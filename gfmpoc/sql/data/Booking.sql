@@ -1,0 +1,14 @@
+INSERT INTO Booking (customerName, dateFrom, dateTo, auId) VALUES ('Mihai Popescu','2018-10-04','2018-10-05',1);
+INSERT INTO Booking (customerName, dateFrom, dateTo, auId) VALUES ('Andrei Popescu','2018-10-04','2018-10-05',2);
+INSERT INTO Booking (customerName, dateFrom, dateTo, auId) VALUES ('Mircea Popescu','2018-10-04','2018-10-05',3);
+INSERT INTO Booking (customerName, dateFrom, dateTo, auId) VALUES ('Sorin Popescu','2018-10-04','2018-10-05',4);
+INSERT INTO Booking (customerName, dateFrom, dateTo, auId) VALUES ('Anca Popescu','2018-12-10','2018-12-12',1);
+INSERT INTO Booking (customerName, dateFrom, dateTo, auId) VALUES ('Maria Popescu','2018-12-10','2018-12-12',2);
+INSERT INTO Booking (customerName, dateFrom, dateTo, auId) VALUES ('Carla Popescu','2018-12-10','2018-12-12',3);
+INSERT INTO Booking (customerName, dateFrom, dateTo, auId) VALUES ('Ana Popescu','2018-10-04','2018-10-05',4);
+INSERT INTO Booking (customerName, dateFrom, dateTo, auId) VALUES ('Stefan Popescu','2018-10-04','2018-10-05',5);
+INSERT INTO Booking (customerName, dateFrom, dateTo, auId) VALUES ('Cristi Popescu','2018-10-04','2018-10-05',6);
+INSERT INTO Booking (customerName, dateFrom, dateTo, auId) VALUES ('David Popescu','2018-10-04','2018-10-05',7);
+INSERT INTO Booking (customerName, dateFrom, dateTo, auId) VALUES ('Darius Popescu','2018-10-04','2018-10-05',8);
+INSERT INTO Booking (customerName, dateFrom, dateTo, auId) VALUES ('Elena Popescu','2018-10-04','2018-10-05',9);
+INSERT INTO Booking (customerName, dateFrom, dateTo, auId) VALUES ('Adi Popescu','2018-10-04','2018-10-05',10);
