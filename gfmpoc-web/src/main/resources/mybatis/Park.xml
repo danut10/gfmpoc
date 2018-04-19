@@ -3,8 +3,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="ro.cegeka.gfmpoc.app.dao.DaoPark">
+	
+	<resultMap type="Park" id="myMap" autoMapping="true">
+		<id property="id" column="id"/>
+		<result property="lastUpdated" column="lastUpdate"/>
+	</resultMap>
 
-	<select id="readList" resultType="Park">
+	<select id="readList" resultMap="myMap">
 		select * from Park
 	</select>
 			
